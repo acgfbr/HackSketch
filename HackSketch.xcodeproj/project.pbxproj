@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF0D86BA228F5C7B00310B22 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0D86B9228F5C7B00310B22 /* AppKit.framework */; };
+		CF0D86BC228F5C7B00310B22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0D86BB228F5C7B00310B22 /* Foundation.framework */; };
+		CF0D86C0228F5C7B00310B22 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF0D86BF228F5C7B00310B22 /* Info.plist */; };
+		CF0D86C3228F5C7B00310B22 /* hackSketch.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0D86C2228F5C7B00310B22 /* hackSketch.m */; };
+		CF0D86C7228F5C7B00310B22 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0D86C6228F5C7B00310B22 /* JRSwizzle.m */; };
+		CF0D86D2228F5D0A00310B22 /* Hook.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0D86D1228F5D0A00310B22 /* Hook.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF0D86B6228F5C7B00310B22 /* HackSketch.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackSketch.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0D86B9228F5C7B00310B22 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		CF0D86BB228F5C7B00310B22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		CF0D86BF228F5C7B00310B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF0D86C1228F5C7B00310B22 /* hackSketch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hackSketch.h; sourceTree = "<group>"; };
+		CF0D86C2228F5C7B00310B22 /* hackSketch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hackSketch.m; sourceTree = "<group>"; };
+		CF0D86C5228F5C7B00310B22 /* JRSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = JRSwizzle/JRSwizzle.h; sourceTree = "<group>"; };
+		CF0D86C6228F5C7B00310B22 /* JRSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = JRSwizzle/JRSwizzle.m; sourceTree = "<group>"; };
+		CF0D86CF228F5CE600310B22 /* Headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
+		CF0D86D0228F5CFB00310B22 /* Hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hook.h; sourceTree = "<group>"; };
+		CF0D86D1228F5D0A00310B22 /* Hook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hook.m; sourceTree = "<group>"; };
+		CF1A34B522915BF00095E1E7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF0D86B3228F5C7B00310B22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0D86BA228F5C7B00310B22 /* AppKit.framework in Frameworks */,
+				CF0D86BC228F5C7B00310B22 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF0D86AD228F5C7B00310B22 = {
+			isa = PBXGroup;
+			children = (
+				CF0D86BD228F5C7B00310B22 /* hacksketch */,
+				CF0D86B8228F5C7B00310B22 /* Frameworks */,
+				CF0D86B7228F5C7B00310B22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF0D86B7228F5C7B00310B22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF0D86B6228F5C7B00310B22 /* HackSketch.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF0D86B8228F5C7B00310B22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF0D86B9228F5C7B00310B22 /* AppKit.framework */,
+				CF0D86BB228F5C7B00310B22 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF0D86BD228F5C7B00310B22 /* hacksketch */ = {
+			isa = PBXGroup;
+			children = (
+				CF0D86CF228F5CE600310B22 /* Headers.h */,
+				CF0D86D0228F5CFB00310B22 /* Hook.h */,
+				CF0D86D1228F5D0A00310B22 /* Hook.m */,
+				CF0D86C1228F5C7B00310B22 /* hackSketch.h */,
+				CF0D86C2228F5C7B00310B22 /* hackSketch.m */,
+				CF0D86C4228F5C7B00310B22 /* JRSwizzle */,
+				CF0D86BE228F5C7B00310B22 /* Supporting Files */,
+			);
+			path = hacksketch;
+			sourceTree = "<group>";
+		};
+		CF0D86BE228F5C7B00310B22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF0D86BF228F5C7B00310B22 /* Info.plist */,
+				CF1A34B522915BF00095E1E7 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF0D86C4228F5C7B00310B22 /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				CF0D86C5228F5C7B00310B22 /* JRSwizzle.h */,
+				CF0D86C6228F5C7B00310B22 /* JRSwizzle.m */,
+			);
+			name = JRSwizzle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF0D86B5228F5C7B00310B22 /* HackSketch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF0D86CC228F5C7B00310B22 /* Build configuration list for PBXNativeTarget "HackSketch" */;
+			buildPhases = (
+				CF0D86B2228F5C7B00310B22 /* Sources */,
+				CF0D86B3228F5C7B00310B22 /* Frameworks */,
+				CF0D86B4228F5C7B00310B22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackSketch;
+			productName = hackerss;
+			productReference = CF0D86B6228F5C7B00310B22 /* HackSketch.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF0D86AE228F5C7B00310B22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Soh Satoh";
+				TargetAttributes = {
+					CF0D86B5228F5C7B00310B22 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CF0D86B1228F5C7B00310B22 /* Build configuration list for PBXProject "HackSketch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF0D86AD228F5C7B00310B22;
+			productRefGroup = CF0D86B7228F5C7B00310B22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF0D86B5228F5C7B00310B22 /* HackSketch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF0D86B4228F5C7B00310B22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0D86C0228F5C7B00310B22 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF0D86B2228F5C7B00310B22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0D86C7228F5C7B00310B22 /* JRSwizzle.m in Sources */,
+				CF0D86D2228F5D0A00310B22 /* Hook.m in Sources */,
+				CF0D86C3228F5C7B00310B22 /* hackSketch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF0D86CA228F5C7B00310B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		CF0D86CB228F5C7B00310B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+			};
+			name = Release;
+		};
+		CF0D86CD228F5C7B00310B22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = 2X98FX3N65;
+				DSTROOT = /;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = hackSketch/PrefixHeader.pch;
+				INFOPLIST_FILE = hackSketch/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.soh.hacksketch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CF0D86CE228F5C7B00310B22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = 2X98FX3N65;
+				DSTROOT = /;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = hackSketch/PrefixHeader.pch;
+				INFOPLIST_FILE = hackSketch/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.soh.hacksketch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF0D86B1228F5C7B00310B22 /* Build configuration list for PBXProject "HackSketch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0D86CA228F5C7B00310B22 /* Debug */,
+				CF0D86CB228F5C7B00310B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF0D86CC228F5C7B00310B22 /* Build configuration list for PBXNativeTarget "HackSketch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF0D86CD228F5C7B00310B22 /* Debug */,
+				CF0D86CE228F5C7B00310B22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF0D86AE228F5C7B00310B22 /* Project object */;
+}

@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  HackSketch
+//
+//  Created by soh on 5/19/19.
+//  Copyright © 2019 Soh Satoh. All rights reserved.
+//
+
+#ifndef hackerss_PrefixHeader_pch
+#define hackerss_PrefixHeader_pch
+
+#import <Cocoa/Cocoa.h>
+#import "JRSwizzle.h"
+
+#endif
