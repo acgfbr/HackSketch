@@ -50,6 +50,6 @@
 
 -(char)hook_isExpired {
     NSLog(@"++++++++ isExpired ++++++++");
-    return 0;
+    return 1;
 }
 @end
