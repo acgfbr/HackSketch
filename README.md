@@ -7,6 +7,7 @@ PLEASE BUY SOFTWARE AND SUPPORT THE DEVELOPER(S).
 
 ## What is this?
 Simple plugin to bypass the expiration of trial on Sketch app.
+(This removes the expiration alert)
 
 ## Does it actually work?
 I don't know. I'm not using Sketch app.
