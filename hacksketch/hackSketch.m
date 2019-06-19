@@ -37,6 +37,8 @@
 {
     hackSketch *plugin = [hackSketch sharedInstance];
     NSLog(@"++++++++ %@ plugin loaded ++++++++", plugin);
+    [NSClassFromString(@"AppController") hookAppController];
+    [NSClassFromString(@"MSLicenseRegistrationWindowController") hookMSLicenseRegistrationWindowController];
     [NSClassFromString(@"BCLicenseManager") hookBCLicenseManager];
     [NSClassFromString(@"BCRegularLicense") hookBCRegularLicense];
 }

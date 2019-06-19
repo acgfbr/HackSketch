@@ -53,3 +53,38 @@
     return 1;
 }
 @end
+
+
+@implementation NSObject(AppControllerHook)
++ (void)hookAppController {
+    NSError *error;
+    [self jr_swizzleMethod:@selector(showLicenseAlert:remainingDays:)
+                withMethod:@selector(hook_showLicenseAlert:remainingDays:)
+                     error:&error];
+    
+    if (error) {
+        NSLog(@"+++++ error: %@", error);
+    }
+}
+
+-(void)hook_showLicenseAlert:arg1 remainingDays:arg2{
+    NSLog(@"prevent to show alert - AppController");
+}
+@end
+
+@implementation NSObject(MSLicenseRegistrationWindowControllerHook)
++ (void)hookMSLicenseRegistrationWindowController {
+    NSError *error;
+    [self jr_swizzleMethod:@selector(showTrialExpiredModal)
+                withMethod:@selector(hook_showTrialExpiredModal)
+                     error:&error];
+    
+    if (error) {
+        NSLog(@"+++++ error: %@", error);
+    }
+}
+
+-(void)hook_showTrialExpiredModal{
+    NSLog(@"prevent to show alert - MSLicenseRegistrationWindowControllerHook");
+}
+@end

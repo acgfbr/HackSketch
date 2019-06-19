@@ -14,3 +14,11 @@
 -(char)isValid;
 -(char)isExpired;
 @end
+
+@interface AppController
+-(void)showLicenseAlert:arg1 remainingDays:arg2;
+@end
+
+@interface MSLicenseRegistrationWindowController
+-(void)showTrialExpiredModal;
+@end

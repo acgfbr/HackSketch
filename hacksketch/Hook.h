@@ -13,6 +13,14 @@
 + (void)hookBCLicenseManager;
 @end
 
-@interface NSObject(BCBCRegularLicenseHook)
+@interface NSObject(BCRegularLicenseHook)
 + (void)hookBCRegularLicense;
+@end
+
+@interface NSObject(AppControllerHook)
++ (void)hookAppController;
+@end
+
+@interface NSObject(MSLicenseRegistrationWindowControllerHook)
++ (void)hookMSLicenseRegistrationWindowController;
 @end
